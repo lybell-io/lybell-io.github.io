@@ -1,32 +1,878 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lybell GC Template</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Dotex</title>
 </head>
-<body>
-  <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">Roadmap</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  <header>
-    <!-- Your header content here -->
-  </header>
-  
-  <main>
-    <!-- Your main content here -->
-  </main>
-  
-  <footer>
-    <!-- Your footer content here -->
-  </footer>
-  
-  <script src="scripts.js"></script>
-</body>
+
+<div>
+    <header class="container">
+        <!-------------- Desktop Header ----------->
+        <div class="site-header d-flex justify-content-between header_elements">
+            <div class="logo d-flex align-items-center">
+                <img src="./assets/Exclude.png" alt="Logo" />
+                <h1 class="word-logo">Detox.</h1>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#research">Research</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#whitepaper">Whitepaper</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#tokensale">Token Sale</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#positions">Roadmap</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#positions">Positions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-btn">
+                <a href="#whitepaper">Read the Whitepaper</a>
+            </div>
+        </div>
+        <!-------------- Mobile Offcanvas Header ----------->
+        <div class="off_header d-flex justify-content-between">
+            <div class="logo d-flex align-items-center">
+                <img src="./assets/Exclude.png" alt="Logo" />
+                <h1 class="word-logo">Detox.</h1>
+            </div>
+            <img data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+                src="./assets/menutoggle.svg" alt="">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <div class="logo d-flex align-items-center">
+                        <img src="./assets/Exclude.png" alt="Logo" />
+                        <h1 class="word-logo">Detox.</h1>
+                    </div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mt-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#research">Research</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#whitepaper">Whitepaper</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#tokensale">Token Sale</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#positions">Roadmap</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#positions">Positions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+</header>
+
+<!-------------- Hero Banner Section ----------->
+
+<div class="hero_section d-flex justify-content-center">
+    <div class="container banner_elements_wrapper text-center">
+        <div class="banner_btn_power">
+            <a href="#whitepaper">🔥Powered by Graphchain tech</a>
+        </div>
+        <div class="banner_text wow fadeInUp">
+            <h1>
+                Lybell GC is fast,<br />
+                scalable, robust, green and<br />
+                cross-chain
+            </h1>
+            <p>
+                By allowing a DAG of data instead of a rigid Blockchain
+                we include all users in every <br />transaction..?
+                something about whatactually happens here
+            </p>
+            <div class="get-started-btn">
+                <a href="#whitepaper"">Get Started</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class=" bg-img">
+                    <div class="container">
+                        <div class="card_section" id="features">
+                            <div class="card_items">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp">
+                                        <div class="card-item first_item">
+                                            <div class="card_img">
+                                                <img src="./assets/Rectangle 980.png" alt="" />
+                                            </div>
+                                            <div class="card_title">
+                                                <h3>Transactions per second</h3>
+                                            </div>
+                                            <div class="card_desc">
+                                                <p>
+                                                    “10-20% of global infrastructure
+                                                    will run on blockchain based systems
+                                                    by 2030”
+                                                </p>
+                                            </div>
+                                            <div class="card_service">
+                                                <img src="./assets/Mask group.png" alt="pwc" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp">
+                                        <div class="card-item second_item d-flex flex-column-reverse">
+                                            <div class="card_img">
+                                                <img src="./assets/Rectangle 980.png" alt="" />
+                                            </div>
+                                            <div class="card_title">
+                                                <h3>Energy Consumption</h3>
+                                            </div>
+                                            <div class="reverse_elements">
+                                                <div class="card_desc">
+                                                    <p>
+                                                        “90% of current enterprise
+                                                        blockchain platform
+                                                        implementations will require
+                                                        replacement by 2021.”
+                                                    </p>
+                                                </div>
+                                                <div class="card_service">
+                                                    <img src="./assets/Mask group (1).png" alt="Gartner" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-------------- Counter Section ----------->
+
+                            <div class="counter_items">
+                                <div class="row justify-content-center gy-4">
+                                    <div class="col-lg-4 col-6">
+                                        <div class="counter_element">
+                                            <p><span class="counter">4.6</span></p>
+                                            <h3>Blockchain</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-6">
+                                        <div class="counter_element">
+                                            <p><span class="counter">1700</span>+</p>
+                                            <h3>Visa</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-6">
+                                        <div class="counter_element">
+                                            <p><span class="counter">07</span>+</p>
+                                            <h3>Gigawatts</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-------------- Collaborative Section ----------->
+
+                        <div class="collaborative_section" id="research">
+                            <div class="row justify-content-center wow fadeInUp">
+                                <div class="col-lg-8">
+                                    <h2 class="text-center">
+                                        Lybell is collaborative, decentralized
+                                        & efficient
+                                    </h2>
+                                    <p class="text-center">
+                                        Lybell provides decentralized cross-chain
+                                        collaborative consensus
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="image_section">
+                                <div class="row">
+                                    <div class="col-lg-6 wow fadeInLeft">
+                                        <div class="row">
+                                            <div class="upper_section">
+                                                <div class="upper_content">
+                                                    <h3>Graphchain</h3>
+                                                    <p>
+                                                        Partial ordering Real-time
+                                                        updates No need for mining pools
+                                                        Scales with demand
+                                                    </p>
+                                                    <p>
+                                                        By allowing a DAG of data
+                                                        instead of a rigid Blockchain we
+                                                        include all users in every
+                                                        transaction..? something about
+                                                        what actually happens here
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="lower_section">
+                                                <div class="lower_content">
+                                                    <h3>Blockchain</h3>
+                                                    <p>
+                                                        Linear ordering Periodic updates
+                                                        Mining pools Scales via forks
+                                                        and updates
+                                                    </p>
+                                                    <p>
+                                                        By allowing a DAG of data
+                                                        instead of a rigid Blockchain we
+                                                        include all users in every
+                                                        transaction..? something about
+                                                        whatactually happens here
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 wow fadeInRight">
+                                        <div class="right_section">
+                                            <img src="./assets/collabImage.png" alt="Image" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-------------- Icons Section ----------->
+
+                        <div class="icon_section wow fadeInUp">
+                            <div class="icons_wrapper">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-2 col-md-3">
+                                        <div class="icon_box_item">
+                                            <div class="icon_img">
+                                                <img src="./assets/icon1.png" alt="icon" />
+                                            </div>
+                                            <h4>Fast</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3">
+                                        <div class="icon_box_item">
+                                            <div class="icon_img">
+                                                <img src="./assets/icon2.png" alt="icon" />
+                                            </div>
+                                            <h4>Scalable</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3">
+                                        <div class="icon_box_item">
+                                            <div class="icon_img">
+                                                <img src="./assets/icon3.png" alt="icon" />
+                                            </div>
+                                            <h4>Robust</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3">
+                                        <div class="icon_box_item">
+                                            <div class="icon_img">
+                                                <img src="./assets/icon4.png" alt="icon" />
+                                            </div>
+                                            <h4>Green</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3">
+                                        <div class="icon_box_item">
+                                            <div class="icon_img">
+                                                <img src="./assets/icon5.png" alt="icon" />
+                                            </div>
+                                            <h4>Cross Chain</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3">
+                                        <div class="icon_box_item">
+                                            <div class="icon_img">
+                                                <img src="./assets/icon6.png" alt="icon" />
+                                            </div>
+                                            <h4>Accessible</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-------------- Whitepaper Section ----------->
+
+                        <div class="white_paper_section wow fadeInUp" id="whitepaper">
+                            <div class="white_paper_upper">
+                                <div class="row">
+                                    <div class="col-lg-6 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">
+                                        <div class="white_left_section">
+                                            <img src="./assets/Frame 42693.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1">
+                                        <div class="white_right_section">
+                                            <h2>Whitepaper</h2>
+                                            <p>
+                                                Pellentesque erat tellus, malesuada id felis
+                                                quis, hendrerit feugiat purus. Nunc elit
+                                                nisi, consectetur sed quam id, vestibulum
+                                                rhoncus enim. Aenean vulputate dui dui, in
+                                                molestie massa scelerisque in. Vivamus
+                                                tincidunt velit eget ex venenatis pretium in
+                                                sit amet sapien. Cras ac sollicitudin nisi.
+                                                <br /><br />Sed laoreet tincidunt feugiat.
+                                                Phasellus leo odio, dapibus ac pretium Sed
+                                                ac sapien cursus, suscipit erat nec, iaculis
+                                                massa. Nunc ultrices enim et nunc dignissim
+                                                dignissim.
+                                            </p>
+                                            <a href="#">Download Whitepaper</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-------------- Token Section ----------->
+
+                            <div class="token_section wow fadeInUp" id="tokensale">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-11">
+                                        <div class="row">
+                                            <div class="left_token_section col-lg-7">
+                                                <h3>Token Sale</h3>
+                                                <p>
+                                                    Etiam imperdiet porttitor nisi, vitae
+                                                    maximus nisl porta id. Etiam ut nunc<br /> eget
+                                                    ligula ornare dignissim ut id mauris.
+                                                    Curabitur tristique eros id orci scelerisqu
+                                                    honcus a in metus. Aliquam erat volutpat.
+                                                    Duis et enim vel turpis dictum consectetur
+                                                    in id tortor. <br />
+                                                    <br />
+                                                    Mauris pulvinar eget. Mauris vel tortor
+                                                    sollicitudin, suscipit augue ut, aliquam
+                                                    erat. Sed varius leo id augue tempus
+                                                    ultricies. Integer in sapien mattis.
+                                                </p>
+                                                <a href="">Token-sale Document</a>
+                                            </div>
+                                            <div class="right_token_section col-lg-5">
+                                                <ul>
+                                                    <li>Overhead Token Distribution</li>
+                                                    <li>Supporting Blockchain Projects</li>
+                                                    <li>Network Growth Marketing Stategies</li>
+                                                    <li>Suspendisse</li>
+                                                    <li>Nam blandit fringilla tincidunt</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-------------- RoadMap Section ----------->
+
+                        <div class="roadmap_section wow fadeInUp" id="positions">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="text-center">Lybell Launch <br /> Roadmap</h2>
+                                    <p class="text-center roadmap_desc">
+                                        Maecenas condimentum bibendum efficitur.
+                                        Phasellus leo orci, tincidunt at egestas ut,
+                                        ultricies sit amet libero. Suspendisse vel
+                                        auctor quam, accumsan feugiat arcu. In a justo
+                                        magna.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <!-------------- Timeline Section Desktop ----------->
+
+                                <div class="timeline_wrapper">
+                                    <span><img src="./assets/line.png" alt=""></span>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="row">
+                                                <!-- Single Timeline  date right -->
+                                                <div class="row single_timeline_item">
+                                                    <span class="triangle"></span>
+                                                    <div class="col-lg-5 offset-lg-1 col-md-5">
+                                                        <div class="timeline_inner_left">
+                                                            <div class="single_timeline_title">
+                                                                <h3 class="text-end">Phase 1</h3>
+                                                            </div>
+                                                            <div class="single_timeline_desc">
+                                                                <p class="text-end">Vivamus risus tortor, pharetra at
+                                                                    mollis in,
+                                                                    lacinia quis nulla. Donec diam tellus, porta vel
+                                                                    arcu ac,
+                                                                    condimentum finibus sapiened malesuada.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3">
+                                                        <div class="timeline_inner_right">
+                                                            <div class="date_box">
+                                                                <div class="date">
+                                                                    <h3>
+                                                                        JAN <br> 2023
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Single Timeline date left -->
+                                                <div class="row single_timeline_item reverse-timeline">
+                                                    <span class="triangle left color2"></span>
+                                                    <div class="col-lg-5 order-last col-md-5">
+                                                        <div class="timeline_inner_left">
+                                                            <div class="single_timeline_title">
+                                                                <h3 class="text-start">Phase 2</h3>
+                                                            </div>
+                                                            <div class="single_timeline_desc">
+                                                                <p class="text-start">Vivamus risus tortor, pharetra at
+                                                                    mollis in,
+                                                                    lacinia quis nulla. Donec diam tellus, porta vel
+                                                                    arcu ac,
+                                                                    condimentum finibus sapiened malesuada.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 offset-lg-3 col-md-3 offset-md-3 order-first">
+                                                        <div class="timeline_inner_right">
+                                                            <div class="date_box">
+                                                                <img src="assets/Unionleft.png" alt="">
+                                                                <div class="date">
+                                                                    <h3>
+                                                                        JAN <br> 2023
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <!-- Single Timeline  date right -->
+                                                <div class="row single_timeline_item">
+                                                    <span class="triangle color3"></span>
+                                                    <div class="col-lg-5 offset-lg-1 ">
+                                                        <div class="timeline_inner_left">
+                                                            <div class="single_timeline_title">
+                                                                <h3 class="text-end">Phase 3</h3>
+                                                            </div>
+                                                            <div class="single_timeline_desc">
+                                                                <p class="text-end">Vivamus risus tortor, pharetra at
+                                                                    mollis in,
+                                                                    lacinia quis nulla. Donec diam tellus, porta vel
+                                                                    arcu ac,
+                                                                    condimentum finibus sapiened malesuada.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="timeline_inner_right">
+                                                            <div class="date_box">
+                                                                <div class="date">
+                                                                    <h3>
+                                                                        JAN <br> 2023
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Single Timeline date left -->
+                                                <div class="row single_timeline_item reverse-timeline">
+                                                    <span class="triangle left color4"></span>
+                                                    <div class="col-lg-5 order-last">
+                                                        <div class="timeline_inner_left">
+                                                            <div class="single_timeline_title">
+                                                                <h3 class="text-start">Phase 4</h3>
+                                                            </div>
+                                                            <div class="single_timeline_desc">
+                                                                <p class="text-start">Vivamus risus tortor, pharetra at
+                                                                    mollis in,
+                                                                    lacinia quis nulla. Donec diam tellus, porta vel
+                                                                    arcu ac,
+                                                                    condimentum finibus sapiened malesuada.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 offset-lg-3 order-first">
+                                                        <div class="timeline_inner_right">
+                                                            <div class="date_box">
+                                                                <img src="./assets/Unionleft.png" alt="">
+                                                                <div class="date">
+                                                                    <h3>
+                                                                        JAN <br> 2023
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <!-- Single Timeline  date right -->
+                                                <div class="row single_timeline_item">
+                                                    <span class="triangle color5"></span>
+                                                    <div class="col-lg-5 offset-lg-1 ">
+                                                        <div class="timeline_inner_left">
+                                                            <div class="single_timeline_title">
+                                                                <h3 class="text-end">Phase 5</h3>
+                                                            </div>
+                                                            <div class="single_timeline_desc">
+                                                                <p class="text-end">Vivamus risus tortor, pharetra at
+                                                                    mollis in,
+                                                                    lacinia quis nulla. Donec diam tellus, porta vel
+                                                                    arcu ac,
+                                                                    condimentum finibus sapiened malesuada.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="timeline_inner_right">
+                                                            <div class="date_box">
+                                                                <div class="date">
+                                                                    <h3>
+                                                                        JAN <br> 2023
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Single Timeline date left -->
+                                                <div class="row single_timeline_item reverse-timeline">
+                                                    <span class="triangle left color6"></span>
+                                                    <div class="col-lg-5 order-last">
+                                                        <div class="timeline_inner_left">
+                                                            <div class="single_timeline_title">
+                                                                <h3 class="text-start">Phase 6</h3>
+                                                            </div>
+                                                            <div class="single_timeline_desc">
+                                                                <p class="text-start">Vivamus risus tortor, pharetra at
+                                                                    mollis in,
+                                                                    lacinia quis nulla. Donec diam tellus, porta vel
+                                                                    arcu ac,
+                                                                    condimentum finibus sapiened malesuada.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 offset-lg-3 order-first">
+                                                        <div class="timeline_inner_right">
+                                                            <div class="date_box">
+                                                                <img src="./assets/Unionleft.png" alt="">
+                                                                <div class="date">
+                                                                    <h3>
+                                                                        JAN <br> 2023
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-------------- Timeline Section Mobile ----------->
+                                <div class="timelineMobo">
+                                    <div class="single_mobiletimeline">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="left_timeline">
+                                                    <img src="./assets/lefttimelinesvg.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="right_timeline fist_content">
+                                                    <h3> Phase 6</h3>
+                                                    <p>Vivamus risus tortor, pharetra at mollis in, lacinia quis nulla.
+                                                        Donec diam
+                                                        tellus, porta vel arcu ac, condimentum finibus sapiened
+                                                        malesuada.</p>
+                                                </div>
+                                                <div class="right_timeline">
+                                                    <h3> Phase 6</h3>
+                                                    <p>Vivamus risus tortor, pharetra at mollis in, lacinia quis nulla.
+                                                        Donec diam
+                                                        tellus, porta vel arcu ac, condimentum finibus sapiened
+                                                        malesuada.</p>
+                                                </div>
+                                                <div class="right_timeline">
+                                                    <h3> Phase 6</h3>
+                                                    <p>Vivamus risus tortor, pharetra at mollis in, lacinia quis nulla.
+                                                        Donec diam
+                                                        tellus, porta vel arcu ac, condimentum finibus sapiened
+                                                        malesuada.</p>
+                                                </div>
+                                                <div class="right_timeline">
+                                                    <h3> Phase 6</h3>
+                                                    <p>Vivamus risus tortor, pharetra at mollis in, lacinia quis nulla.
+                                                        Donec diam
+                                                        tellus, porta vel arcu ac, condimentum finibus sapiened
+                                                        malesuada.</p>
+                                                </div>
+                                                <div class="right_timeline">
+                                                    <h3> Phase 6</h3>
+                                                    <p>Vivamus risus tortor, pharetra at mollis in, lacinia quis nulla.
+                                                        Donec diam
+                                                        tellus, porta vel arcu ac, condimentum finibus sapiened
+                                                        malesuada.</p>
+                                                </div>
+                                                <div class="right_timeline">
+                                                    <h3> Phase 6</h3>
+                                                    <p>Vivamus risus tortor, pharetra at mollis in, lacinia quis nulla.
+                                                        Donec diam
+                                                        tellus, porta vel arcu ac, condimentum finibus sapiened
+                                                        malesuada.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-------------- Application Focus Section ----------->
+
+                        <div class="application_focus wow fadeInUp">
+                            <div class="row">
+                                <div class="focus_title">
+                                    <div class="section_title d-flex justify-content-between align-items-center">
+                                        <h3>Application Focus</h3>
+                                        <div class="slider_icons d-none justify-content-center align-items-center">
+                                            <div class="icon_left">
+                                                <img src="./assets/left-arrow.png" alt="" />
+                                            </div>
+                                            <div class="icon_right">
+                                                <img src="./assets/right-arrow.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------Cards Section ----------->
+
+                            <div class="cards">
+                                <div class="row">
+                                    <div class="card_slider">
+                                        <div class="col-lg-4">
+                                            <div class="card_elements">
+                                                <img src="./assets/focusimg.png" alt="" />
+                                                <h5>B2B, B2C, C2C, P2P</h5>
+                                                <p>
+                                                    The platform is designed to allow
+                                                    users to transact between phone and
+                                                    email systems. Using legacy
+                                                </p>
+                                                <button>
+                                                    <a href="">Read More</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="card_elements">
+                                                <img src="./assets/focusimg2.png" alt="" />
+                                                <h5>B2B, B2C, C2C, P2P</h5>
+                                                <p>
+                                                    The platform is designed to allow
+                                                    users to transact between phone and
+                                                    email systems. Using legacy
+                                                </p>
+                                                <button>
+                                                    <a href="">Read More</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="card_elements">
+                                                <img src="./assets/focusimg3.png" alt="" />
+                                                <h5>B2B, B2C, C2C, P2P</h5>
+                                                <p>
+                                                    The platform is designed to allow
+                                                    users to transact between phone and
+                                                    email systems. Using legacy
+                                                </p>
+                                                <button>
+                                                    <a href="">Read More</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--------------Newsletter Section ----------->
+
+                        <div class="newsletter_section wow fadeInUp" id="contact">
+                            <h2>Subscribe To Our Newsletter</h2>
+                            <p>
+                                Join our email list for exclusive offers and the latest
+                                news.
+                            </p>
+                            <div class="email_container">
+                                <form action=""> <input type="email" placeholder="Enter Your Email" />
+                                    <button type="submit"><span class="letter">Subscribe</span> <span
+                                            class="button-icon">
+                                            <svg width="30" height="30" viewBox="0 0 23 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1_1194)">
+                                                    <path
+                                                        d="M10.4151 21.1224L17.4488 6.43528C17.5298 6.26612 17.5004 6.06478 17.3744 5.92587C17.2484 5.78696 17.0509 5.73807 16.8747 5.80224L1.57256 11.3726C1.38438 11.4411 1.26185 11.6232 1.26921 11.8233C1.27664 12.0234 1.41213 12.1959 1.60486 12.2505L8.31041 14.1464L9.54454 21.0047C9.56024 21.092 9.60009 21.1704 9.65685 21.233C9.72825 21.3117 9.82645 21.3655 9.937 21.3804C10.1355 21.4072 10.3286 21.303 10.4151 21.1224Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1_1194">
+                                                        <rect width="16" height="16" fill="white"
+                                                            transform="translate(12) rotate(47.7936)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                        </span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--------------Footer Section ----------->
+                    <footer>
+                        <div class="footer">
+                            <div class="container footer_contains">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="footer_menu_links">
+                                            <h5>ECOSYSTEM</h5>
+                                            <li><a href="#">Community</a></li>
+                                            <li><a href="#">Treasury</a></li>
+                                            <li><a href="#">Telemetry</a></li>
+                                            <li><a href="#">Brand Hub</a></li>
+                                            <li><a href="#">Jobs</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="footer_menu_links">
+                                            <h5>FEATURES</h5>
+                                            <li><a href="#">Technology</a></li>
+                                            <li><a href="#">Token</a></li>
+                                            <li><a href="#">Para chains</a></li>
+                                            <li><a href="#">Staking</a></li>
+                                            <li><a href="#">XCM</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="footer_menu_links">
+                                            <h5>DEVELOPMENT</h5>
+                                            <li><a href="#">Documentation</a></li>
+                                            <li><a href="#">Grants</a></li>
+                                            <li><a href="#">Bounties</a></li>
+                                            <li><a href="#">Academy</a></li>
+                                            <li><a href="#">Build</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="footer_menu_links">
+                                            <h5>About</h5>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Roadmap</a></li>
+                                            <li><a href="#">Whitepaper</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Support</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="footer_menu_links">
+                                            <h5>NEWSLETTER</h5>
+                                            <p>
+                                                Subscribe to the newsletter to hear
+                                                about Lybell updates and events.
+                                            </p>
+                                            <button><a href="#">Subscribe</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="below_footer d-flex justify-content-between align-items-center">
+                                    <div class="footer_logo">
+                                        <img src="./assets/footerlogo.png" alt="" />
+                                    </div>
+                                    <p>© 2023. All Rights Reserved</p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+            </div>
+
+            <!--------------Scripts Inclueded ----------->
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+            <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+            <script src="./js/main.js"></script>
+            </body>
+
 </html>
