@@ -63,14 +63,14 @@ body {
     color: #333;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth transition for background color */
+    transition: color 0.3s ease; 
 }
 
 .nav-menu a:hover {
     color: #f68026;
     font-weight: bold;
     text-decoration: underline;
-    transform: scale(1.04); /* Slightly enlarges the item */
+    transform: scale(1.04); 
 }
 
 
@@ -114,18 +114,18 @@ body {
     transition: background-color 0.6s ease; /* Smooth transition for background color */
 }
 
-.features-section:hover, .about-section:hover, .solutions-section:hover, .signup-section:hover, .nodes-section:hover, .tokens-section:hover, .whitepaper-section:hover {
+.about-section:hover, .solutions-section:hover, .signup-section:hover, .nodes-section:hover, .tokens-section:hover, .whitepaper-section:hover {
     background-color: #f68026;
     color: #F5F5F5;
-    transform: scale(1.04); /* Slightly enlarges the item */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
+    transform: scale(1.04);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.features-section:hover, .about-section:hover, .solutions-section:hover, .signup-section:hover, .nodes-section:hover, .tokens-section:hover, .whitepaper-section:hover {
+.about-section:hover, .solutions-section:hover, .signup-section:hover, .nodes-section:hover, .tokens-section:hover, .whitepaper-section:hover {
     background-color: #f68026;
     color: #F5F5F5;
-    transform: scale(1.04); /* Slightly enlarges the item */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
+    transform: scale(1.04);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
 
 

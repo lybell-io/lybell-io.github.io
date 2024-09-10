@@ -24,13 +24,14 @@
                     <li><a href="#tokens">tokens</a></li>
                     <li><a href="./docs.html">docs</a></li>
                     <li><a href="http://0.0.0.0">testnet-explorer</a></li>
+                    <li><a href="#nodes">nodes</a></li>
                 </ul>
             </nav>
         </div>
         <div class="hero-section">
             <div class="hero-content">
                 <h1>A New Era In Scalability </h1>
-                <a href="#signup" class="cta-button">join the mailing list</a>
+                <a href="#signup" class="cta-button">join our mailing list</a>
             </div>
         </div>
     </header>
@@ -53,27 +54,27 @@
                 <div class="features-list">
                     <div class="feature-item">
                         <h3>Fast</h3>
-                        <p>Graphchain provides extremely-fast transaction speeds, through the DAG-like consensus mechanism.</p>
+                        <p>Extremely-fast transaction speeds, through the DAG-like consensus mechanism</p>
                     </div>
                     <div class="feature-item">
                         <h3>Scalable</h3>
-                        <p>Graphchain has a fundamental DAG-like design, which enables exceptional scalability, accommodating huge parallel transaction volume.</p>
+                        <p>Fundamental DAG-like design enables exceptional scalability, accommodating huge parallel transaction volume</p>
                     </div>
                     <div class="feature-item">
                         <h3>Robust</h3>
-                        <p>Graphchain uses robust cryptographic techniques for validation, transaction creation and consesnus.</p>
+                        <p>Robust cryptography, capturing and recording even invalid transactions</p>
                     </div>
                     <div class="feature-item">
                         <h3>Green</h3>
-                        <p>Graphchain prioritises energy efficiency and sustainability in consensus.</p>
+                        <p>Eco-friendly design, prioritising energy efficiency and sustainability in consensus</p>
                     </div>
                     <div class="feature-item">
                         <h3>Checkpointed</h3>
-                        <p>Graphchain is designed with implicit and explicit (cross-chain) checkpointing, providing a relaible backup of the current state.</p>
+                        <p>Graphchain is designed with cross-chain checkpointing, providing a relaible backup of the current state</p>
                     </div>
                     <div class="feature-item">
                         <h3>Easy</h3>
-                        <p>Graphchain has low transaction costs and quick and simple ways to get started.</p>
+                        <p>Graphchain has low transaction costs and quick and simple ways to get started</p>
                     </div>
                 </div>
             </div>
@@ -83,7 +84,7 @@
             <div class="container">
                 <h2>Whitepaper</h2>
                 <p>
-                    Get the whitepaper here:  <a href="https://forms.gle/CFYPBTKUbTVbpB8w5" target="_blank">graphchain-wp</a>.
+                    Learn more, get the whitepaper here:  <a href="https://forms.gle/CFYPBTKUbTVbpB8w5" target="_blank">graphchain-wp</a>.
                 </p>
             </div>
         </section>
@@ -93,10 +94,8 @@
         <section id="tokens" class="tokens-section">
             <div class="container">
                 <h2>Tokens</h2>
-                <p> Graphchain is being deployed with a only a franction premine for ealy supporters.
-                <p> The vast majority of the system's tokens are only creatable through participation of the validation effort.</p>
-                <p> There is a small inflationary measure to ensure future validation efforts. </p>
-                <p> The full token document will be made available here: <a href="./docs.html" target="_blank">graphchain-td</a> </p>
+                <p> The Graphchain is being deployed with 80/20 and no-premine.</p>
+                <p> Read the token document here: <a href="https://forms.gle/CFYPBTKUbTVbpB8w5" target="_blank">graphchain-td</a> </p>
             </div>
         </section>
         
@@ -104,8 +103,7 @@
         <section id="tokens" class="nodes-section">
             <div class="container">
                 <h2>Run a Node</h2>
-                <p>Interested in becoming a validator node to secure the network?</p>
-                <p>Fill out the validator-interest form here: </p>
+                <p>Become a validator node to secure the network. We need validators to secure and run the network. </p>
             </div>
         </section>
         
@@ -125,28 +123,26 @@
         <div class="footer-container">
             <div class="footer-row">
                 <div class="footer-col">
-                    <h4>Lybell Graphchain Ltd</h4>
+                    <h4>Company</h4>
                     <ul class="footer-links">
-                        <li><a href="/about#about">About Us</a></li>
-                        <li><a href="/about#contact">Contact</a></li>
-                        <li><a href="/about#contribute">Contribute</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/careers">Contribute</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="/docs#faq">FAQ</a></li>
-                        <li><a href="/docs#support">Support</a></li>
-                        <li><a href="/docs#privacy">Development</a></li>
-                        <li><a href="/privacy_policy">Privacy Policy</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/support">Support</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/privacy">Development</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Follow Us</h4>
-                    <div class="footer-links">
-                        <li> <a href="#signup"> email</a> </li>
-                        <li> <a href="#signup"> telegram/discord/twitter (TBA)</a> </li>
-                        
+                    <div class="social-links">
+                        <a href="#one"><i class="fab fa-facebook-f"></i> link</a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
