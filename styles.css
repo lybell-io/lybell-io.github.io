@@ -1,0 +1,295 @@
+body {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.site-header, .site-footer {
+    background: #fff; /* Unified header and footer background */
+    color: #333;
+    text-align: center;
+    padding: 1em 0;
+    font-stretch: expanded;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    flex-grow: 1;
+}
+
+.logo {
+    font-size: 0.5em;
+    width: 20px;
+    text-transform: uppercase;
+    color: #f68026; 
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.logo img {
+    width: 260px; /* Adjust width as needed */
+    height: auto; /* Keeps the aspect ratio intact */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 1.2em;
+}
+
+.nav-menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for background color */
+}
+
+.nav-menu a:hover {
+    color: #f68026;
+    font-weight: bold;
+    text-decoration: underline;
+    transform: scale(1.04); /* Slightly enlarges the item */
+}
+
+
+.hero-section {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #f68026; 
+    text-align: center;
+    padding: 4em 0;
+    background-color: #333;
+}
+.hero-section:hover {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #f68026; 
+    text-align: center;
+    padding: 4em 0;
+    background-color: #333;
+}
+
+.cta-button, #signup-form button {
+    background: #f68026;
+    color: white;
+    padding: 0.8em 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cta-button:hover, #signup-form button:hover {
+    background: #F5F5F5; /* Darker blue for hover state */
+    border: #333;
+    border-color: #333;
+    color: #333;
+}
+
+
+.features-section, .about-section, .solutions-section, .signup-section, .nodes-section, .tokens-section, .whitepaper-section {
+    padding: 2em 0;
+    background: #ffffff;
+    text-align: center;
+    transition: background-color 0.6s ease; /* Smooth transition for background color */
+}
+
+.features-section:hover, .about-section:hover, .solutions-section:hover, .signup-section:hover, .nodes-section:hover, .tokens-section:hover, .whitepaper-section:hover {
+    background-color: #f68026;
+    color: #F5F5F5;
+    transform: scale(1.04); /* Slightly enlarges the item */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
+}
+
+.features-section:hover, .about-section:hover, .solutions-section:hover, .signup-section:hover, .nodes-section:hover, .tokens-section:hover, .whitepaper-section:hover {
+    background-color: #f68026;
+    color: #F5F5F5;
+    transform: scale(1.04); /* Slightly enlarges the item */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
+}
+
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.feature-item {
+    flex-basis: calc(25%);
+    margin-bottom: 2em;
+    text-align: left;
+    padding: 1em;
+    transition: background-color 0.6s ease; /* Smooth transition for background color */
+}
+.feature-item:hover{
+    background-color: #f68026;
+    color: #F5F5F5;
+    transform: scale(1.04); /* Slightly enlarges the item */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
+}
+
+.feature-item h3 {
+    font-size: 1.58em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+}
+
+.feature-item p {
+    line-height: 1.5;
+}
+
+#signup-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#signup-form input[type="email"] {
+    width: 300px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for background color */
+    padding: 40px 0;
+    font-size: 15px;
+}
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-row {
+    display: flex;
+}
+.footer-col {
+    flex: 1;
+    padding: 0 20px;
+}
+.footer-col h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+.footer-links li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+a {
+    font-weight: bold;       
+    color: #333;            
+    text-decoration: underline; 
+}
+
+a:hover {
+    font-weight: bold;        
+    color: blue;            
+    text-decoration: underline; 
+}
+
+.site-footer a:hover {
+    color: #f68026;
+    font-weight: bold;
+    text-decoration: underline;
+    transform: scale(1.04); /* Slightly enlarges the item */
+
+}
+
+
+
+
+.hamburger {
+    display: none; /* Hide by default */
+    cursor: pointer;
+    font-size: 24px; /* Correct the font size */
+}
+
+@media (max-width: 768px) {
+    .footer-container, .footer-row {
+        flex-direction: column;
+    }
+    .footer-col {
+        width: 100%;
+        padding: 20px;
+    }
+    .logo img {
+        width: 220px; /* Adjust width as needed */
+        height: auto; /* Keeps the aspect ratio intact */
+    }
+    body {
+        font-size: 0.9em; /* Reduce the base font size */
+    }
+    .navbar {
+        flex-direction: column; /* Stack logo and menu vertically */
+        align-items: center; /* Center-align items for a better appearance */
+    }
+    .container {
+        width: 100%; /* Allow more margin space */
+    }
+    .feature-item, .solution-item {
+        flex-basis: 100%; /* Stack these items instead of side by side */
+    }
+    .hamburger {
+        display: block; /* Show the hamburger menu */
+        margin-top: 10px; /* Provide some space above the hamburger menu */
+    }
+    .nav-menu {
+        display: none; /* Initially hide the menu */
+        flex-direction: column;
+        width: 100%; /* Ensure full width on small screens */
+        font-size: 1.31em;
+    }
+    .nav-menu.li{
+        padding: 10em;
+        margin: 10em;;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column; /* Ensure menu items are stacked vertically */
+        align-items: center; /* Align links in the center */
+        width: 100%; /* Full width for better touch targets */
+    }
+}
+
