@@ -1,0 +1,14 @@
+site_name: Graphchain Documentation
+site_url: https://graphchain.org/docs  # Update this to match your site structure
+docs_dir: docs                  # Source Markdown files location
+site_dir: ../site/docs                # Build output location
+
+theme:
+  name: material                      # Optional, use MkDocs Material theme
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - API:
+      - Overview: api/overview.md
+      - Endpoints: api/endpoints.md
+  - FAQ: faq.md
