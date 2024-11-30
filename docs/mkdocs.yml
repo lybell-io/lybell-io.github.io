@@ -1,7 +1,7 @@
 site_name: Graphchain Documentation
-site_url: https://graphchain.org/docs  # Update this to match your site structure
-docs_dir: docs                  # Source Markdown files location
-site_dir: ../site/docs                # Build output location
+site_url: https://graphchain.org/docs # Update this to match your site structure
+docs_dir: docs                   # Source Markdown files location
+site_dir: site/docs                   # Build output location
 
 theme:
   name: material                      # Optional, use MkDocs Material theme
