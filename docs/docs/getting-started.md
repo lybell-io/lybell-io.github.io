@@ -1,7 +1,7 @@
 # Getting Started
 
 ## What is Graphchain?
-Graphchain is a "Layer-1" Directed Acyclic Graph (DAG)-based crypto protocol. It was originally an academic paper from Boyen, Carr and Haines, first written about in 2016, and subsequently 2018. 
+Graphchain is a "Layer-1" Directed Acyclic Graph (DAG)-based crypto protocol. It was originally an academic paper by Boyen, Carr and Haines, first written and disseminated in 2016, and subsequently publicshed in 2018. 
 
 Links:
 - White paper: [WHITEPAPER
@@ -18,7 +18,7 @@ https://eprints.sztaki.hu/9327/1/Bauer_42_3256036_ny.pdf#page=16
 
 
 
-## What is a DAG? 
+## DAGs? 
 DAG stands for Directed Acyclic Graph.
 DAGs are relatively simple to understand, and we display them visually circles (nodes) and arrows (edges). The term is taken from the matemtaical area of Graph Theory. If we think of the Bitcoin blockchai structure, it is also a DAG but with more restictions. 
 
@@ -33,8 +33,6 @@ DAGs are relatively simple to understand, and we display them visually circles (
       C-->D;
 ```
 
-
-
 A Directed Acyclic Graph (DAG) is a data structure used in mathematics and computer science. It consists of:
 
 Nodes (vertices): Representing data points, such as transactions or blocks.
@@ -48,9 +46,7 @@ In Graph Theory, DAGs are widely studied due to their flexibility and efficiency
 A traditional blockchain (like Bitcoin) can be thought of as a restrictive DAG, where blocks form a single linear chain.
 Graphchain expands on this by allowing a more generalized DAG structure, enabling multiple parallel paths and reducing bottlenecks.
 
-
-
-## Why DAGs then?
+## Why use DAGs?
 Graphchain proposes a DAG-based infrastructure that is similar to Bitcoin, but offers much greater scalability. This scalability comes with different security assumptions, which relies on rational actors. 
 
 DAGs have several advantages over traditional linear blockchain structures:
