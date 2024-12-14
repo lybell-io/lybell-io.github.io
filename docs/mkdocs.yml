@@ -5,6 +5,7 @@ site_dir: site/docs                   # Build output location
 
 theme:
   name: material                      # Optional, use MkDocs Material theme
+  favicon: '../img/favicon.svg'
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
