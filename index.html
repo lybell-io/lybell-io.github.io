@@ -30,7 +30,7 @@
         
                     <!-- nav -->
                     <ul class="flex flex-col md:flex-row md:space-x-2 space-y-0 md:space-y-0 text-sm">
-                        <li><a href="#features" class="block hover:text-orange-500  transition duration-500">features</a></li>
+                        <li><a href="#features" class="block hover:text-orange-500 hover:underline  transition duration-500">features</a></li>
                         <li><a href="#wp" class="block hover:text-orange-500 hover:underline transition duration-500">whitepaper</a></li>
                         <li><a href="#tokens" class="block hover:text-orange-500 hover:underline transition duration-500">tokens</a></li>
                         <li><a href="/site/docs/" class="block hover:text-orange-500 hover:underline transition duration-500">docs</a></li>
@@ -79,9 +79,9 @@
                 <h2 class="text-3xl font-bold text-center mb-8">Features</h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="feature bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-bold mb-2 hover:text-orange-500 ">Fast</h3>
-                        <p>Graphchain provides extremely-fast transaction speeds, through the DAG-like consensus mechanism.</p>
+                    <div class="feature bg-white p-4 rounded-lg shadow-md hover:text-orange-500">
+                        <h3 class="text-xl font-bold mb-2">Fast</h3>
+                        <p class="hover:text-black-100">Graphchain provides extremely-fast transaction speeds, through the DAG-like consensus mechanism.</p>
                     </div>
         
                     <div class="feature bg-white p-4 rounded-lg shadow-md">
@@ -95,27 +95,27 @@
                         <p>Graphchain uses robust cryptographic techniques for validation, transaction creation and consensus.</p>
                     </div>
                     
-                    <div class="feature bg-white p-6 rounded-lg shadow-md">
+                    <div class="feature bg-white p-4 rounded-lg shadow-md">
                         <h3 class="text-xl font-bold mb-2">Green</h3>
                         <p>Graphchain prioritises energy efficiency and sustainability in consensus.</p>
                     </div>
         
-                    <div class="feature bg-white p-6 rounded-lg shadow-md">
+                    <div class="feature bg-white p-4 rounded-lg shadow-md">
                         <h3 class="text-xl font-bold mb-2">Checkpointed</h3>
                         <p>Graphchain is designed with implicit and explicit (cross-chain) checkpointing, providing a reliable backup of the current state.</p>
                     </div>
                     
-                    <div class="feature bg-white p-6 rounded-lg shadow-md">
+                    <div class="feature bg-white p-4 rounded-lg shadow-md">
                         <h3 class="text-xl font-bold mb-2">Easy</h3>
                         <p>Graphchain has low transaction token costs and quick and simple ways to participate.</p>
                     </div>
 
-                    <div class="feature bg-white p-6 rounded-lg shadow-md">
+                    <div class="feature bg-white p-4 rounded-lg shadow-md">
                         <h3 class="text-xl font-bold mb-2">Simple</h3>
                         <p>Graphchain has pseudocode, python and rust implementations. Making it as human readable as possible.</p>
                     </div>
 
-                    <div class="feature bg-white p-6 rounded-lg shadow-md">
+                    <div class="feature bg-white p-4 rounded-lg shadow-md">
                         <h3 class="text-xl font-bold mb-2">Fair</h3>
                         <p>Graphchain </p>
                     </div>
@@ -123,42 +123,43 @@
             </div>
         </section>
 
-        <section id="wp" class="whitepaper-section">
-            <div class="container">
-                <h2>Whitepaper</h2>
-                <p>
-                    Get the whitepaper here: <a href="/assets/wp.pdf" target="_blank">graphchain-wp</a>.
+        <section id="wp" class="p-6 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-4 centered">Whitepaper</h2>
+                <p class="text-lg">
+                    Get the whitepaper here: 
+                    <a href="/assets/wp.pdf" target="_blank" class="text-blue-500 hover:text-blue-700 underline">graphchain-wp</a>.
                 </p>
             </div>
         </section>
 
         </section>
 
-        <section id="tokens" class="tokens-section">
-            <div class="container">
-                <h2>Tokens</h2>
-                <p> Graphchain is being deployed with a only a small amount of token available for early supporters.
-                <p> The vast majority of the system's tokens are only creatable through participation of the validation effort.</p>
-                <p> There is eventually a small inflationary measure to future-proof the network.</p>
-                <p> The full token document is made available here: <a href="./docs.html" target="_blank">graphchain-td</a> </p>
+        <section id="tokens" class="tokens-section py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">Tokens</h2>
+                <p class="text-lg mb-4">Graphchain is being deployed with only a small amount of tokens available for early supporters.</p>
+                <p class="text-lg mb-4">The vast majority of the system's tokens are only creatable through participation in the validation effort.</p>
+                <p class="text-lg mb-4">There is eventually a small inflationary measure to future-proof the network.</p>
+                <p class="text-lg">The full token document is made available here: <a href="./docs.html" target="_blank" class="text-blue-500 hover:text-blue-700 underline">graphchain-td</a></p>
             </div>
         </section>
         
 
-        <section id="tokens" class="nodes-section">
-            <div class="container">
-                <h2>Run a Node</h2>
-                <p>Become a validator node to secure the network and gain validator rewards.</p>
-                <p>Contact us here: <a href="mailto:validator@lybell.io">validator@lybell.io</a></p>
+        <section id="tokens" class="nodes-section py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Run a Node</h2>
+            <p class="text-lg mb-4">Become a validator node to secure the network and gain validator rewards.</p>
+            <p class="text-lg">Contact us here: <a href="mailto:validator@lybell.io" class="text-blue-500 hover:text-blue-700 underline">validator@lybell.io</a></p>
             </div>
         </section>
 
 
         
-        <section id="signup" class="signup-section">
-            <div class="container">
-            <h2>Subscribe for updates</h2>
-            <p>Want email updates? Send an email to <a href="mailto:signup@lybell.io?subject=Sign-me up!">signup@lybell.io</a> with the subject "sign-me up!".</p>
+        <section id="signup" class="signup-section py-16 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Subscribe for updates</h2>
+            <p class="text-lg mb-4">Want email updates? Send an email to <a href="mailto:signup@lybell.io?subject=Sign-me up!" class="text-blue-500 hover:text-blue-700 underline">signup@lybell.io</a> with the subject "sign-me up!".</p>
             </div>
         </section>
 
