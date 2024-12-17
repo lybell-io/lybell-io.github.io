@@ -8,7 +8,7 @@ theme:
   favicon: '../img/favicon.svg'
   logo: '../img/favicon.svg' 
   palette:
-    primary: 'indigo'
+    primary: 'black'
     accent: 'pink'
   font:
     text: 'Roboto'
@@ -16,7 +16,16 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
+  - Testnet: testnet.md
+  - Mainnet: mainnet.md
+  - Validators: validators.md
+  - Governance: governance.md
+  - Wallets: wallets.md
+  - Roadmap: roadmap.md
+  - Resources: resources.md
+  - Tokens: tokens.md
   - FAQ: faq.md
+
 
 markdown_extensions:
   - pymdownx.superfences
