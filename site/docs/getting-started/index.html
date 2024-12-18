@@ -339,24 +339,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#consensus" class="md-nav__link">
-    <span class="md-ellipsis">
-      Consensus
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -392,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mainnet.md" class="md-nav__link">
+      <a href="../mainnet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -432,7 +414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../governance.md" class="md-nav__link">
+      <a href="../governance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -452,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wallets.md" class="md-nav__link">
+      <a href="../wallets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -472,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../roadmap.md" class="md-nav__link">
+      <a href="../roadmap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../resources.md" class="md-nav__link">
+      <a href="../resources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -512,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tokens.md" class="md-nav__link">
+      <a href="../tokens/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -646,24 +628,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#consensus" class="md-nav__link">
-    <span class="md-ellipsis">
-      Consensus
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -711,38 +675,36 @@ A DAG idea is taken from the matemtaical area of Graph Theory. It consists of:</
 </ol>
 <hr />
 <h3 id="a-graph">A Graph</h3>
-<div class="highlight"><pre><span></span><code>  graph TD;
+<div class="highlight"><pre><span></span><code>  DAG graph;
       A--&gt;B;
       A--&gt;C;
       B--&gt;D;
       C--&gt;D;
 </code></pre></div>
-<p>A Directed Acyclic Graph (DAG) is a data structure used in mathematics and computer science. It consists of:</p>
-<p>Nodes (vertices): Representing data points, such as transactions or blocks.
-Edges (arrows): Representing relationships between the nodes.
-The key properties of a DAG:</p>
-<p>Directed: Each edge has a direction, indicating the relationship between nodes.
-Acyclic: There are no loops or cycles, meaning you cannot traverse the graph in a way that leads back to the starting point.
-In Graph Theory, DAGs are widely studied due to their flexibility and efficiency. In the context of blockchain and distributed systems:</p>
 <p>A traditional blockchain (like Bitcoin) can be thought of as a restrictive DAG, where blocks form a single linear chain.
 Graphchain expands on this by allowing a more generalized DAG structure, enabling multiple parallel paths and reducing bottlenecks.</p>
 <h2 id="why-use-dags">Why use DAGs?</h2>
-<p>Graphchain proposes a DAG-based infrastructure that is similar to Bitcoin, but offers much greater scalability. This scalability comes with different security assumptions, which relies on rational actors. </p>
-<p>DAGs have several advantages over traditional linear blockchain structures:</p>
+<p>Graphchain uses a DAG-based infrastructure that is similar to Bitcoin, but offers much greater scalability. 
+This scalability comes with different, more complex, security assumptions, which relies on rational actors. </p>
+<p>Nonetheless, DAGs have several advantages over traditional linear blockchain structures. The two most prominent are:</p>
 <ul>
 <li><strong>Scalability</strong>:
 A DAG structure supports parallel transaction validation, allowing the network to process many transactions simultaneously without waiting for a single block to complete.</li>
 <li><strong>Efficiency</strong>:
 The absence of a linear block structure eliminates the need for mining races, reducing computational overhead and energy consumption.</li>
 </ul>
-<p>While Bitcoin’s blockchain is technically a DAG with added restrictions, Graphchain leverages the full potential of DAGs to improve scalability without compromising on key features like decentralization. However, this approach requires different security assumptions, relying on rational actors who act in their own self-interest while maintaining network integrity.</p>
-<h2 id="consensus">Consensus</h2>
-<h2 id="project-layout">Project layout</h2>
-<div class="highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<p>Bitcoin’s blockchain is also a DAG, just with additional restrictions which make it linear. Graphchain uses the full potential of DAGs to improve scalability without compromising on key features like decentralisation. </p>
+<!--
+## Consensus
+
+
+## Project layout
+
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
+-->
 
 
 

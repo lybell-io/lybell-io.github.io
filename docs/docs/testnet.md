@@ -24,6 +24,5 @@ You can find a basic testnet explorer here: [**Testnet Explorer**](http://13.41.
 For more information, updates, and progress:
 - Visit the official website: [Graphchain.org](https://graphchain.org)
 - Reach out for support if you encounter issues with the testnet: support@lybell.io
-
 ---
 

@@ -4,11 +4,10 @@
 
 The Graphchain testnet is currently operational and available for validators. Validators participate in securing the DAG-network, achiving consensus, and maintaining integrity. We maintain a list of active validators. Tokens are generated periodically for the validation effort.
 
-You can view the **validator list** here:  
-[**Validator List (Testnet)**](http://13.50.162.45/)  
+You can view the **validator list** here: [**Validator List (Testnet)**](http://13.50.162.45/)  
 
 > **Note**:  
-> The explorer is currently served over **HTTP** (not HTTPS). Some browsers may display warnings due to the lack of HTTPS encryption. You can proceed safely for testing purposes. *Hosted by Lybell* 
+> The explorer is currently served over **HTTP** (not HTTPS). Some browsers may display warnings or errors. *Hosted by Lybell* 
 
 ---
 
@@ -16,7 +15,7 @@ You can view the **validator list** here:
 
 To become a validator on the testnet (and later mainnet), you must request a validator key. This can be done by filling out the Tally Validator Key Request Form:  
 
-[**Request Validator Key**](https://tally.so/forms/3E86Ol/edit)
+[**Request Validator Key**](https://tally.so/r/3E86Ol)
 
 Please ensure you provide accurate and complete information when submitting the form.
 Approval is usually fast, but can take more time during busy periods.
