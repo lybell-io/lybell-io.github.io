@@ -10,17 +10,17 @@ Welcome to the Graphchain documentation page. The best place to start is with th
 
 
 ## Available pages:
-- [Home](home)
-- [Getting-started](getting-started)
-- [Validators](validators)  
-- [Testnet](testnet)
-- [Tokens](tokens)
+- [Home](index.md)
+- [Getting-started](getting-started.md)
+- [Validators](validators.md)  
+- [Testnet](testnet.md)
+- [Tokens](tokens.md)
 
 
 ## Pages in development:
-- [Mainnet](mainnet)  
-- [Wallets](wallets)
-- [Roadmap](roadmap)
-- [Resources](resources)
-- [Governance](governance)
-- [FAQ](faq)
+- [Mainnet](mainnet.md)  
+- [Wallets](wallets.md)
+- [Roadmap](roadmap.md)
+- [Resources](resources.md)
+- [Governance](governance.md)
+- [FAQ](faq.md)
