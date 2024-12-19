@@ -53,7 +53,7 @@ From the start of the second year, validators may opt to turn on an automatic ch
 | Graphchain Network Tokens             | 19,241,453,486.08  | (2+3+2)% |
 | Validator Creatable (6-Year Schedule) | 228,148,662,763.52 | 83%  |
 
-# Token Allocation Over Six Years
+### Token Allocation Over Six Years
 
 |                      | Year-1 (+10%)   | Year-2 (+5%)    | Year-3 (0%)     | Year-4 (0%)     | Year-5 (-5%)    | Year-6 (-10%)   | Total                |
 |------------------------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|----------------------|
