@@ -318,6 +318,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#fixed-charitable-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixed Charitable Allocation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-token-schedule-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Token Schedule Breakdown
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-allocation-over-six-years" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Allocation Over Six Years
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -508,6 +535,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#fixed-charitable-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixed Charitable Allocation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-token-schedule-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Token Schedule Breakdown
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-allocation-over-six-years" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Allocation Over Six Years
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -523,12 +577,19 @@
                   
 
 
-  <h1>Tokens</h1>
-
-<p>The total amount of tokens created follows a linear schedule over the first 6 years, with a maximum of $2^{38} = 274,877,906,944$ tokens created by the end of year 6. There is slightly more weighting to the early years validation effort, which will be explained in detail.</p>
-<p>After the first 6 years, the system implements an annual inflation schedule of approximately 3%. The additional tokens are calculated as TOTAL_TOKENS * 0.03 at each anniversary. These tokens are distributed and minable over the year.</p>
+<p>The total amount of tokens created follows a linear schedule over the first 6 years, with a maximum of <code>2^{38} = 274,877,906,944</code> tokens created by the end of year 6. There is slightly more weighting to the early years validation effort, with:</p>
+<ul>
+<li>10% extra in Year-1  <code>= 50,394,282,939.73</code>                </li>
+<li>5% extra in Year-2 <code>= 48,103,633,715.20</code></li>
+<li>0% in Year-3 <code>= 45,812,984,490.67</code></li>
+<li>0% in Year-4 <code>= 45,812,984,490.67</code></li>
+<li>-5% in Year-5 <code>= 43,522,335,266.13</code></li>
+<li>-10% in Year-6 <code>= 41,231,686,041.60</code></li>
+</ul>
+<p>After the first 6 years, the system is designed to implement an annual inflation schedule, through the validation effort, of <code>3%</code>. The additional tokens are calculated as <code>TOTAL_TOKENS * 0.03</code> at each anniversary. These tokens are distributed and minable over the year. <em>NOTE: 6 years is a long time to project into the future, and it may be that the inflationary schedule is slightly different at the time of implementation.</em> </p>
 <h2 id="why-inflationary">Why Inflationary?</h2>
-<p>A low, fixed inflation schedule keeps the system dynamic, incentivizes validators to remain active, and encourages the continued use of the system. It also provides later adopters an incentive.</p>
+<p>Many popular blockchain systems are inflationary as more tokens are produced at each validation effort. 
+A low, fixed inflation schedule incentivizes validators to remain active and encourages the continued use of the system. It also provides an incentive to later adopters. Keeping the inflation schedule low strikes a fair balance between those that participated in the early system and new adopters.</p>
 <p>The table below outlines the total tokens created and distributed at each year after the initial 6-year issuance period. The annual, monthly, and fortnightly breakdowns illustrate how tokens are added over time under the 3% inflation schedule.</p>
 <table>
 <thead>
@@ -583,13 +644,108 @@
 </table>
 <h2 id="development-allocation">Development allocation</h2>
 <p>83% of the total token supply is allocated through validation efforts. There is no pre-mine; however, an initial allocation is set aside for contributors who have supported the development so far.</p>
-<p>At launch, 10% of the total token supply is allocated as follows:
-- 6.5%: Initial investors
-- 3.5%: Initial developers</p>
-<p>An additional 7% of the total supply is allocated on an ongoing basis by the Graphchain Network to support builders and network development:
-- Year 1: 2% of the supply becomes available.
-- Year 2: An additional 3% of the supply becomes available.
-- Year 3: A final 2% of the supply becomes available.</p>
+<p>At launch, 10% of the total token supply is allocated as follows:</p>
+<ul>
+<li>6.5%: Initial investors</li>
+<li>3.5%: Initial developers</li>
+</ul>
+<p>An additional 7% of the total supply is allocated on an ongoing basis by the Graphchain Network to support builders and network development:</p>
+<ul>
+<li>Year 1: 2% of the supply becomes available.</li>
+<li>Year 2: An additional 3% of the supply becomes available.</li>
+<li>Year 3: A final 2% of the supply becomes available.</li>
+</ul>
+<h2 id="fixed-charitable-allocation">Fixed Charitable Allocation</h2>
+<p>From the start of the second year, validators may opt to turn on an automatic charitable donation on each validation effort, where validation rewards are automatically distributed to verified charitable network addresses.</p>
+<h2 id="full-token-schedule-breakdown">Full Token Schedule Breakdown</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Tokens</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Total Tokens</strong></td>
+<td>274,877,906,944.00</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Development Allocation</td>
+<td>27,487,790,694.40</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Graphchain Network Tokens</td>
+<td>19,241,453,486.08</td>
+<td>(2+3+2)%</td>
+</tr>
+<tr>
+<td>Validator Creatable (6-Year Schedule)</td>
+<td>228,148,662,763.52</td>
+<td>83%</td>
+</tr>
+</tbody>
+</table>
+<h1 id="token-allocation-over-six-years">Token Allocation Over Six Years</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Year-1 (+10%)</th>
+<th>Year-2 (+5%)</th>
+<th>Year-3 (0%)</th>
+<th>Year-4 (0%)</th>
+<th>Year-5 (-5%)</th>
+<th>Year-6 (-10%)</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Creatable</strong></td>
+<td>41,827,254,839.98</td>
+<td>39,926,015,983.62</td>
+<td>38,024,777,127.25</td>
+<td>38,024,777,127.25</td>
+<td>36,123,538,270.89</td>
+<td>34,222,299,414.53</td>
+<td>228,148,662,763.52</td>
+</tr>
+<tr>
+<td><strong>Development Allocation</strong></td>
+<td>27,487,790,694.40</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>27,487,790,694.40</td>
+</tr>
+<tr>
+<td><strong>Graphchain Network Tokens</strong></td>
+<td>5,497,558,138.88</td>
+<td>8,246,337,208.32</td>
+<td>5,497,558,138.88</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>19,241,453,486.08</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>74,812,603,673.26</td>
+<td>48,172,353,191.94</td>
+<td>43,522,335,266.13</td>
+<td>38,024,777,127.25</td>
+<td>36,123,538,270.89</td>
+<td>34,222,299,414.53</td>
+<td><strong>274,877,906,944.00</strong></td>
+</tr>
+</tbody>
+</table>
 
 
 

@@ -317,9 +317,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-graph" class="md-nav__link">
+  <a href="#a-graph-example" class="md-nav__link">
     <span class="md-ellipsis">
-      A Graph
+      A Graph Example
     </span>
   </a>
   
@@ -606,9 +606,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-graph" class="md-nav__link">
+  <a href="#a-graph-example" class="md-nav__link">
     <span class="md-ellipsis">
-      A Graph
+      A Graph Example
     </span>
   </a>
   
@@ -663,7 +663,7 @@ This is one of the first to write about the application DAGs in blockchain techn
 <p>DAG stands for Directed Acyclic Graph.
 A DAG idea is taken from the matemtaical area of Graph Theory. It consists of:</p>
 <ul>
-<li><strong>Nodes (vertices)</strong>: Usually represented by circles, representing data points, such as transactions or blocks in cryptocurrencies.</li>
+<li><strong>Nodes (vertices)</strong>: Usually represented by circles or squares, representing data points, such as transactions or blocks in cryptocurrencies.</li>
 <li><strong>Edges (arrows)</strong>: Representing relationships between the nodes.</li>
 </ul>
 <h3 id="key-properties-of-a-dag">Key Properties of a DAG</h3>
@@ -674,13 +674,29 @@ A DAG idea is taken from the matemtaical area of Graph Theory. It consists of:</
    There are no loops or cycles, meaning you cannot traverse the graph in a way that leads back to the starting point.</li>
 </ol>
 <hr />
-<h3 id="a-graph">A Graph</h3>
-<div class="highlight"><pre><span></span><code>  DAG graph;
-      A--&gt;B;
-      A--&gt;C;
-      B--&gt;D;
-      C--&gt;D;
+<h3 id="a-graph-example">A Graph Example</h3>
+<p>Below is a DAG-like diagram
+<div class="highlight"><pre><span></span><code>  DAG graph directions;
+  A   --&gt;   B;
+  A   --&gt;   C;
+  B   --&gt;   D;
+  B   --&gt;   E;
+  B   --&gt;   F;
+  C   --&gt;   D;
+  D   --&gt;   G;
+  E   --&gt;   G;
+  F   --&gt;   G;
 </code></pre></div>
+<pre class="mermaid"><code>graph LR
+  A[A]   --&gt;   B[B];
+  A[A]   --&gt;   C[C];
+  B[B]   --&gt;   D[D];
+  B[B]   --&gt;   E[E];
+  B[B]   --&gt;   F[F];
+  C[C]   --&gt;   D[D];
+  D[D]   --&gt;   G[G];
+  E[E]   --&gt;   G[G];
+  F[F]   --&gt;   G[G];</code></pre></p>
 <p>A traditional blockchain (like Bitcoin) can be thought of as a restrictive DAG, where blocks form a single linear chain.
 Graphchain expands on this by allowing a more generalized DAG structure, enabling multiple parallel paths and reducing bottlenecks.</p>
 <h2 id="why-use-dags">Why use DAGs?</h2>

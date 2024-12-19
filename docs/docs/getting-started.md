@@ -28,7 +28,7 @@ DAGs are relatively simple to understand, and we display them visually circles (
 DAG stands for Directed Acyclic Graph.
 A DAG idea is taken from the matemtaical area of Graph Theory. It consists of:
 
-- **Nodes (vertices)**: Usually represented by circles, representing data points, such as transactions or blocks in cryptocurrencies.
+- **Nodes (vertices)**: Usually represented by circles or squares, representing data points, such as transactions or blocks in cryptocurrencies.
 - **Edges (arrows)**: Representing relationships between the nodes.
 
 ### Key Properties of a DAG
@@ -40,14 +40,31 @@ A DAG idea is taken from the matemtaical area of Graph Theory. It consists of:
 
 ---
 
-### A Graph
-
+### A Graph Example
+Below is a DAG-like diagram
 ```
-  DAG graph;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+  DAG graph directions;
+  A   -->   B;
+  A   -->   C;
+  B   -->   D;
+  B   -->   E;
+  B   -->   F;
+  C   -->   D;
+  D   -->   G;
+  E   -->   G;
+  F   -->   G;
+```
+``` mermaid
+graph LR
+  A[A]   -->   B[B];
+  A[A]   -->   C[C];
+  B[B]   -->   D[D];
+  B[B]   -->   E[E];
+  B[B]   -->   F[F];
+  C[C]   -->   D[D];
+  D[D]   -->   G[G];
+  E[E]   -->   G[G];
+  F[F]   -->   G[G];
 ```
 
 A traditional blockchain (like Bitcoin) can be thought of as a restrictive DAG, where blocks form a single linear chain.
