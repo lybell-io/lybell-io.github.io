@@ -1,17 +1,13 @@
-# Testnet Documentation
+# Testnet
 
 ## Testnet Demo Explorer
 
-You can find a basic testnet explorer here: [**Testnet Explorer**](http://13.41.115.172/)  
+You can find the testnet explorer here: [**Testnet Explorer**](https://testnet.graphchain.org/)  
 
-> **Note**:  
-> The explorer is served over `http` (not `https`), which may cause browser errors or warnings.
-
----
 
 ## Important Information
 
-- The testnet is part of the ongoing development process.
+- The testnet is part of the ongoing development process for the mainnet deployment.
 - **Frequent resets**:  
   The testnet is reset regularly, which may cause temporary downtimes.  
 - **Changing Information**:  
