@@ -1,4 +1,3 @@
-Main graphchain website.
-Must build mkdocs before deploying:
-$ cd docs
-$ python -m mkdocs build
+# Graphchain
+
+Source for the [graphchain.org](https://graphchain.org) website and documentation.
